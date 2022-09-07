@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+   
+    <title>Enhanced Elements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+<section class="header">
+ <div>
+ 
+  <a href="index.html"><img src="images/EE-logo.png"></a>
+ </div>
+ <nav>
+  <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="design.html">DESIGNS</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()" ></i>
+  </nav>
+ </section>
+  
+ <section class="autotype">
+  <h1>Do <span class="auto-type"></span></h1>
+  
+ </section>
+
+ <section class="services">
+  <h2>Our Services</h2>
+  <p>Websites are made up of a number of elements that we enhance to give you the perfect design for your site <br> whether it's personal or business.</p>
+<div class="service-row">
+
+
+  <div class="service-container">
+    <h1>Basic Website Design</h1>
+    <div class="service-list">
+      <ul>
+        <li>Planning</li>
+        <li>Banner</li>
+        <li>3 - 5 pages</li>
+        <li>A Web Form</li>
+        <li>Mobile Responsive</li>
+       <li>Google Analytics</li>
+      </ul>
+    </div>
+    <a href="basic.html" class="quote-btn">Get Quote</a>
+  </div>
+
+  <div class="service-container">
+    <h1>Standard Website Design</h1>
+    <div class="service-list">
+      <ul>
+        <li>Planning</li>
+        <li>2 Banners</li>
+        <li>10 - 15 pages</li>
+        <li>A Web Form</li>
+        <li>Mobile Responsive</li>
+        <li>Sitemap</li>
+        <li>Content Management System</li>
+        <li>Google Analytics</li>
+      </ul>
+    </div>
+    <a href="standard.html" class="quote-btn">Get Quote</a>
+  </div>
+  
+  <div class="service-container">
+    <h1>Advanced Website Design</h1>
+    <div class="service-list">
+      <ul>
+        <li>Planning</li>
+        <li>10 Banners</li>
+        <li>2 Sliders</li>
+        <li>20 - 25 pages</li>
+        <li>A Web Form</li>
+        <li>Mobile Responsive</li>
+        <li>Sitemap</li>
+        <li>Content Management System</li>
+        <li>Google Analytics</li>
+      </ul>
+    </div>
+    <a href="advanced.html" class="quote-btn">Get Quote</a>
+  </div>
+</div>
+</section>
+
+<section class="steps">
+  <h2>Get Your Design In 4 Easy Steps</h1>
+<div class="steps-row">
+  <div class="steps-container-1">
+    <i class="fa fa-check" ></i>
+    <h4>Step 1</h4>
+    <p>Select your design package whether Basic, Standard or Advanced </p>
+  </div>
+
+  <div class="steps-container-2">
+    <i class="fa fa-check" ></i>
+    <h4>Step 2</h4>
+    <p>Select a theme for your site and send us content to be uploaded </p>
+  </div>
+  <div class="steps-container-3">
+    <i class="fa fa-check" ></i>
+    <h4>Step 3</h4>
+    <p>We will work on a draft that can be reviewed in 5 - 7 business days </p>
+  </div>
+  <div class="steps-container-4">
+    <i class="fa fa-check" ></i>
+    <h4>Step 4</h4>
+    <p>We will do quality control and once finalized we will help you launch your website online </p>
+  </div>
+</div>
+  </section>
+
+   <section class="about-us">
+    <h2>Why Choose Enhanced Elements To Design Your Site?</h2>
+    <div class="about-us-row">
+      <div class="about-us-content">
+        
+        <p>We offer innovative, user-friendly and mobile responsive designs. We also provide a friendly service and assist our customers to promote customer loyalty and satisfaction. Not only do we cater to your needs, but also to your users.</p>
+      </div>
+      <div class="components">
+        <h4>Our Key Components</h4>
+        <ul>
+          <li>Purpose and Clarity</li>
+          <li>Usability</li>
+          <li>User-Focused</li>
+          <li>Easy Navigation</li>
+          <li>Appearance</li>
+          <li>Content Management</li>
+        </ul>
+      </div>
+    </div>
+    <a href="design.html" class="design-btn">View Our Designs</a>
+   </section>
+
+    <!-----FOOTER----->
+    <section class="footer">
+ 
+          
+                
+                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                <i class="fa fa-instagram" ></i>
+                
+                
+                
+          <p>Copyright © 2022 <a href="#">Enhanced Elements.</a>All rights reserved</p>
+      
+      </section>
+    
+<!------THIS IS WHERE I WRITE CODE FOR JAVASCRIPT-->
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+   var navLinks = document.getElementById("navLinks")
+  function showMenu(){
+      navLinks.style.right ="0";
+  }
+   function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+
+
+  var typed = new Typed(".auto-type",{
+    strings: ["You Need A Website? ^1000","Not Worry, We've Got You! ^5000" ],
+    typeSpeed:130,
+    backSpeed:60,
+    loop:true
+    
+  })
+</script>
+
+</body>
+</html>

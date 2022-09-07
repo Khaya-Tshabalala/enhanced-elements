@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+   
+    <title>Enhanced Elements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+<section class="header">
+ <div>
+ 
+  <a href="index.html"><img src="images/EE-logo.png"></a>
+ </div>
+ <nav>
+  <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="design.html">DESIGNS</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()" ></i>
+  </nav>
+ </section>
+  
+<section class="portfolio">
+  <h1>Innovative, User-friendly and Mobile Responsive Designs.</h1>
+  <div class="portfolio-row">
+    <div class="port-con">
+      <div class="port-img">
+        <img src="images/portfolio.png">
+       </div>
+       <div class="port-info">
+        <h2>Brochure Website</h2>
+        <p>A cost-effective solution to promote your business. A brochure website displays the goods and services that your business provides and allows customers to contact you or book your service.</p>
+       </div>
+    </div>
+    <div class="port-con">
+      <div class="port-info">
+        <h2>Portfolio Website</h2>
+        <p>An extension of your Curriculum Vitae. A portfolio website is a creative way for you to share details about yourself and your work. It also provides a great way to reach more clients</p>
+       </div>
+      <div class="port-img">
+        <img src="images/portfolio1.png">
+       </div>
+      
+    </div>
+    <div class="port-con">
+      <div class="port-img">
+        <img src="images/shop.png">
+       </div>
+       <div class="port-info">
+        <h2>eCommerce Website</h2>
+        <p>An online store where you can sell your products and services.</p>
+       </div>
+    </div>
+    <a href="contact.html">Get Your Design Now</a>
+  </div>
+  
+</section>
+ 
+<!-----FOOTER----->
+<section class="footer">
+ 
+          
+                
+  <i class="fa fa-envelope" aria-hidden="true"></i>
+ <i class="fa fa-instagram" ></i>
+ 
+ 
+ 
+<p>Copyright © 2022 <a href="#">Enhanced Elements.</a>All rights reserved</p>
+
+</section>
+    
+<!------THIS IS WHERE I WRITE CODE FOR JAVASCRIPT-->
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+   var navLinks = document.getElementById("navLinks")
+  function showMenu(){
+      navLinks.style.right ="0";
+  }
+   function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+
+
+
+</script>
+
+</body>
+</html>
